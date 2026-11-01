@@ -1,0 +1,13 @@
+CREATE DATABASE ST2_PRACTICE;
+USE ST2_PRACTICE;
+SHOW DATABASES;
+CREATE TABLE Student(
+    id INT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    age INT,
+    marks INT,
+    city VARCHAR(30)
+
+);
+SELECT * FROM Student;
+
