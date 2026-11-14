@@ -5,6 +5,7 @@ FROM table1
 CROSS JOIN table2;
 ek table ki har row ko doosri table ki har row ke saath combine kar diya jata hai.
 */
+USE ST2_PRACTICE;
 SELECT * FROM StudentDetails;
 SELECT
     Studentss.name,
@@ -34,27 +35,16 @@ CROSS JOIN Course
 CROSS JOIN StudentDetails;
 
 -- CROSS JOIN vs comma syntax
+-- Ye dono MySQL mein Cartesian product generate kar sakte hain
 SELECT *
 FROM Studentss
 CROSS JOIN Course;
 
--- 
+-- comma syntax
+SELECT * FROM
+Student,Course;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
+INNER JOIN: Sirf matching records combine karta hai.
+CROSS JOIN: Har possible combination banata hai, matching ki condition nahi dekhta.
+*/
